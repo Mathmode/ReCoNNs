@@ -4,4 +4,4 @@ The code covers four test examples: A 1D problem with a jump in the derivative, 
 
 Each example admits its own "Main_X.py" file (Main_1D, Main_jump, Main_L, Main_4_Materials, respectively). The relevant architectures are found in the SRC.Architectures_X files, and the corresponding loss functions in SRC.Loss_X. SRC.Postprocessing is used to plot the 2D solutions once obtained. 
 
-Note that, depending on the version of TensorFlow used, the callback measure_exponent, whose second argument is the index of the singular layer, may need to be changed.
+Note that, depending on the version of TensorFlow used, the second argument in the callback measure_exponent, corresponding to the index of the singular layer, may need to be changed, as the order of construction varies between versions.
